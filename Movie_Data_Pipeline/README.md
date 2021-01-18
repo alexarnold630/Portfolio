@@ -11,5 +11,5 @@ To scrape the Top 100 Movies of 2020 from Rotten Tomatoes, run those movies from
 - OMDb API: http://omdbapi.com/
 
 ### ERD Diagram
-![ERD Diagram](/ERD/movie_ERD.png)
+![ERD Diagram](ERD/movie_ERD.png)
 
