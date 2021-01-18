@@ -3,16 +3,17 @@
 ## Background
 Select a real-world data set and perform an Exploratory Data Analysis.
 
-## Objectives
+## Objective
+To determine what variables consitute happiness and investigate whether happiness changes over time and whether or not weather affects happiness. 
 
-### Select Data
+## Data
 - Kaggle Notebooks:
     - https://www.kaggle.com/alexisbcook/interactive-maps
     - https://www.kaggle.com/mathurinache/world-happiness-report ○ https://www.kaggle.com/londeen/world-happiness-report-2020
 - Open Weather API: ​https://openweathermap.org/api
 - Google Maps API
 
-### Data Clean-Up
+## Data Clean-Up
 - Used Kaggle Datasets for CSVs for the World Happiness Report from 2015-2020 and gathered data weather from the OpenWeatherMap API based on locations pulled from the Google Maps API
 - Merged datasets and formatted the columns based on the variables used to calculate the World Happiness Index that remained consistent over time, such as: 
     - Economy
@@ -23,12 +24,12 @@ Select a real-world data set and perform an Exploratory Data Analysis.
     - Generosity
     - Residuals
 
-### Hypotheses
+## Hypotheses
 - Happiness has increased over time
 - Weather positively affects happiness
 - Predict happiness will decrease next year
 
-### Analysis
+## Analysis
 - Chloropleth Map illustrating Total Happiness Score from 2015-2020
 - Histograms and Violin Plots illustrating normal distribution of scores
 - ANOVA testing to determined the significance of the Happiness Index Score variables
@@ -38,7 +39,7 @@ Select a real-world data set and perform an Exploratory Data Analysis.
     - Added weather as a possible correlating factor
 - Prediction Modeling using regression
 
-### Conclusions
+## Conclusions
 - Happiness has increased over time
 - Weather does not positively affect happiness
 - Ability to predict happiness is questionable as it is dependent upon Happiness variables
