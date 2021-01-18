@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mission to Mars</title>
+    
+    <!-- Bootstrap and Bootswatch CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron text-center" style="background-image: url(https://sm.mashable.com/t/mashable_in/photo/default/nasa-galaxy_9pu4.1920.jpg); background-size: 100%; height: 100%;">
+            <h1>Mission to Mars</h1>
+            <p><a class="btn btn-secondary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        </div>
+    </div>
+    <div class = "container-fluid">
+         <!--Mars News-->
+        <div class = "row" style="margin-top:5%">
+            <div class = "col-lg-12">
+                    <h3>Latest Mars News</h3>
+                    <h5>{{mars.news_title}}</h5>
+                    <p>{{mars.news_p}}</p>
+            </div>
+        </div>
+        <!--Mars Featured Image-->
+        <div class = "row" style="margin-top:5%">
+            <div class="col-md-8">
+                <h3>Featured Mars Image</h3>
+                <a href ="{{mars.featured_image_url}}" target="_blank"><img src="{{mars.featured_image_url}}" style="max-width:100%; max-height: auto;" alt="Mars Featured Image"></a>  
+            </div>  
+            <!--Mars Facts Sidebar-->
+            <div class="col-md-4">
+                <h3>Mars Facts</h3>
+                <div>{{mars.mars_facts|safe}}</div>
+            </div>
+        </div>
+        <!--Mars Hemispheres-->
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div class = "row" style="margin-top:5%">
+                    <div class = "col-lg-12">
+                        <h3 style="text-align: center;">Mars Hemispheres</h3>
+                        <hr style="border-width:3px;color:white;"> 
+                    </div>
+                </div>
+                <!--Hemisphere Grid-->
+                <div class="row" style="margin-top: 5%;">
+                    {% for hemi in mars.hemispheres[0:2] %}
+                    <div class="col-md-6">
+                        <a href="{{hemi.img_url}}" target="_blank"><img style="width:100%" src="{{hemi.img_url}}" class="center"></a>
+                        <h4 style="margin-top: 5%;">{{hemi.title}}</h4>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="row" style="margin-top: 5%;">
+                    {% for hemi in mars.hemispheres[2:4] %}
+                    <div class="col-md-6">
+                        <a href="{{hemi.img_url}}" target="_blank"><img style="width:100%" src="{{hemi.img_url}}" class="center"></a>
+                        <h4 style="margin-top: 5%;">{{hemi.title}}</h4>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; Alex Arnold 2021</p>
+    </footer>
+
+</body>
+
+</html>
+    
+
