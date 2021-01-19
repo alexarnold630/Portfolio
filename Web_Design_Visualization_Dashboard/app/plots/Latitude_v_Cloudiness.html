@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloudiness</title>
+
+    <!-- Bootstrap and Bootswatch CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/solar/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS for Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand nav-link" href = "../index.html"> Latitude </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu bg-dark text-active" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="Latitude_v_Temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="Latitude_v_Humidity.html">Humidity</a>
+                        <a class="dropdown-item active" href="Latitude_v_Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Latitude_v_Wind_Speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cloudiness Plot-->
+    <div class="container-fluid">
+        <div class="row" style="margin-top:5%">
+            <!-- Cloudiness Summary-->
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Cloudiness</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:2%; padding:2%">
+                        <div class="col-md-12">
+                            <img src="../assets/images/Latitude_v_Cloudiness.png" alt = "Latitude_v_Cloudiness">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:5%; padding:2%">
+                        <div class="col-md-12">
+                            <p>
+                                Cloudiness is dispersed and widespread across latitude.
+
+                                With a correlation coefficient of is is 0.157741, there is a very weak positive relationship between latitude in the northern hemisphere and cloudiness.
+
+                                With a correlation coefficient of is 0.025693, there is a very weak positive relationship between latitude and cloudiness for the southern hemisphere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Visualizations Side Bar-->
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <!-- 1st Row Title-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Visualizations</h1>
+                            <hr>  
+                        </div>
+                    </div>
+                    <!-- 2nd Row Graphs-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a target="_self" href="Latitude_v_Temperature.html">
+                                <img width= "100%" src= "../assets/images/Latitude_v_Temperature.png" alt = "Latitude_v_Temperature">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a target="_self" href="Latitude_v_Humidity.html">
+                                <img width= "100%" src= "../assets/images/Latitude_v_Humidity.png" alt = "Latitude_v_Humidity">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3rd Row Graphs-->
+                    <div class="row" style="margin-top:5%">
+                        <div class="col-md-6">
+                            <a target="_self" href="Latitude_v_Cloudiness.html">
+                                <img width= "100%" src= "../assets/images/Latitude_v_Cloudiness.png" alt = "Latitude_v_Cloudiness">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a target="_self" href="Latitude_v_Wind_Speed.html">
+                                <img width= "100%" src= "../assets/images/Latitude_v_Wind_Speed.png" alt = "Latitude_v_Wind_Speed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer" style="padding:3.5%">
+            <p>Copyright &copy; Alex Arnold 2020</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
