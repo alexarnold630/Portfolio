@@ -33,4 +33,3 @@ Build a web application that scrapes various websites for data related to the Mi
 - Create a root route / that will query your Mongo database and pass the mars data into an HTML template to display the data.
 - Create a template HTML file called index.html that will take the mars data dictionary and display all of the data in the appropriate HTML elements.
 
-https://alexarnold630.github.io/Portfolio/Mission_to_Mars/app/templates/index.html
